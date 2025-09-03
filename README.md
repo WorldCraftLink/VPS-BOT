@@ -1,5 +1,6 @@
 # Install
 ```sh
+git clone https://github.com/WorldCraftLink/VPS-BOT
 pip install -r requirements.txt
 'sudo nano /etc/systemd/system/unixnodes-bot.service
 ```
