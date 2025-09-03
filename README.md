@@ -4,12 +4,13 @@ git clone https://github.com/WorldCraftLink/VPS-BOT
 pip install -r requirements.txt
 'sudo nano /etc/systemd/system/unixnodes-bot.service
 ```
-[Unit]
+# Unit
+```sh
 Description=WorldCraftLink VPS Bot
 After=network.target docker.service
 Requires=docker.service
 
-[Service]
+# Service
 Type=simple
 User=root
 WorkingDirectory=/root
@@ -20,9 +21,9 @@ Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 Environment="DOCKER_HOST=unix:///var/run/docker.sock"
 
 # Install
-```sh
 WantedBy=multi-user.target
 ```
+
 ```sh
 sudo useradd -r -s /bin/false unixnodes
 sudo usermod -aG docker unixnodes
