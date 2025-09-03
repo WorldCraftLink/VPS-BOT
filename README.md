@@ -2,6 +2,7 @@
 ```sh
 git clone https://github.com/WorldCraftLink/VPS-BOT
 pip install -r requirements.txt
+cd VPS-BOT
 sudo nano /etc/systemd/system/worldcraftlink-bot.service
 ```
 # Unit
