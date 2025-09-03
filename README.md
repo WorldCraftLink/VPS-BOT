@@ -25,8 +25,8 @@ WantedBy=multi-user.target
 ```
 
 ```sh
-sudo useradd -r -s /bin/false unixnodes
-sudo usermod -aG docker unixnodes
+sudo useradd -r -s /bin/false worldcraftlink
+sudo usermod -aG docker worldcraftlink
 ```
 # Reload systemd
 ```sh
@@ -34,18 +34,19 @@ sudo systemctl daemon-reload
 ```
 # Enable service to start on boot
 ```sh
-sudo systemctl enable unixnodes-bot.service
+sudo systemctl enable worldcraftlink-bot.service
 ```
 # Start the service now
 ```sh
-sudo systemctl start unixnodes-bot.service
+sudo systemctl start worldcraftlink-bot.service
 ```
 # Check status
 ```sh
-sudo systemctl status unixnodes-bot.service
+sudo systemctl status worldcraftlink-bot.service
 ```
 # View logs
 ```sh
-sudo journalctl -u unixnodes-bot.service -f
+sudo journalctl -u worldcraftlink-bot.service -f
+
 ```
 
